@@ -1,0 +1,14 @@
+certifi==2018.4.16
+chardet==3.0.4
+happybase==1.1.0
+idna==2.6
+kafka-python==1.4.2
+ply==3.11
+py4j==0.10.6
+pyspark==2.3.0
+redis==2.10.6
+requests==2.18.4
+schedule==0.5.0
+six==1.11.0
+thriftpy==0.3.9
+urllib3==1.22
