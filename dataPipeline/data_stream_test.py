@@ -48,11 +48,11 @@ def test_data_stream(sc, ssc, topic):
 
     json_res = json.loads(kafka_producer.value)
     print json_res
-    assert _is_close(json_res.get('startPrice'), 10000.0)
-    assert _is_close(json_res.get('endPrice'), 20000.0)
-    assert _is_close(json_res.get('maxPrice'), 20000.0)
-    assert _is_close(json_res.get('minPrice'), 10000.0)
-    assert _is_close(json_res.get('averagePrice'), 14000.0)
+    assert _is_close(json_res.get('open'), 10000.0)
+    assert _is_close(json_res.get('close'), 20000.0)
+    assert _is_close(json_res.get('high'), 20000.0)
+    assert _is_close(json_res.get('low'), 10000.0)
+    assert _is_close(json_res.get('average'), 14000.0)
     print 'test_data_stream passed'
 
 

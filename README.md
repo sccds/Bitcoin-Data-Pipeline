@@ -31,4 +31,5 @@ node node/index.js --redis_host=localhost --redis_port=6379 --redis_channel=pric
 
 
 ### Visulization
-![Visulization](visualization.png)
+![Visulization-linechart](visualization_linechart.png)
+![Visulization-candlestick](visualization_candlestick.png)

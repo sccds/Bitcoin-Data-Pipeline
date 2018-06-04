@@ -30,11 +30,11 @@ def process_stream(stream, kafka_producer, target_topic):
             data = json.dumps({
                     'symbol': r[0],
                     'timestamp': int(round(time.time() * 1000)),
-                    'startPrice': r[1][1],
-                    'endPrice': r[2][1],
-                    'maxPrice': r[3][1],
-                    'minPrice': r[4][1],
-                    'averagePrice': r[5]
+                    'open': r[1][1],
+                    'close': r[2][1],
+                    'high': r[3][1],
+                    'low': r[4][1],
+                    'average': r[5]
                 })
             try:
                 logger.info('Sending average price %s to kafka', data)
